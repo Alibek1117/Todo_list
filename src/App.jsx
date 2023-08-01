@@ -22,7 +22,7 @@ const handleSubmit =(e)=>{
     title: newTodos,
     completed: false,
   }).then(res=> setTodos([...todos, res.data]))
-
+  setNewTodos('')
  
 }
 const handleDelete =(id)=>{
@@ -42,6 +42,7 @@ const handleDelete =(id)=>{
             type="text"
             placeholder=" Add new to do"
             onChange={(e) => setNewTodos(e.target.value)}
+            value={newTodos}
           />
           <button className="w-32 bg-blue-400 p-4 text-xl rounded-xl" type="submit">
             Add
