@@ -31,7 +31,7 @@ const handleDelete =(id)=>{
 // console.log(e);
   return (
     <>
-      <div className="container mx-auto max-w-screen-md bg-slate-100 p-4 shadow">
+      <div className="container mx-auto max-w-screen-md bg-slate-100 p-10 shadow">
         <h1>Todo list {todos.length}</h1>
         <form
           className="flex items-center justify-between gap-4 "
